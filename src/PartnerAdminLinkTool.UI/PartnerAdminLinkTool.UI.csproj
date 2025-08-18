@@ -19,7 +19,7 @@
   <ItemGroup>
     <!-- Removed Microsoft.Graph to avoid consent issues and reduce executable size (saves ~39MB) -->
     <!-- PAL functionality works perfectly with just Azure Management API -->
-    <PackageReference Include="Microsoft.Identity.Client" Version="4.74.1" />
+    <PackageReference Include="Microsoft.Identity.Client" Version="4.76.0" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="9.0.8" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="9.0.8" />
     <PackageReference Include="Microsoft.Extensions.Logging" Version="9.0.8" />
@@ -27,7 +27,7 @@
     <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="9.0.8" />
     <PackageReference Include="Microsoft.Extensions.Hosting" Version="9.0.8" />
     <PackageReference Include="Spectre.Console" Version="0.50.0" />
-    <PackageReference Include="Azure.Identity" Version="1.14.2" />
+    <PackageReference Include="Azure.Identity" Version="1.15.0" />
   </ItemGroup>
 
   <ItemGroup>
