@@ -1,5 +1,9 @@
 name: Manual Release
 
+# Default minimal permissions; jobs elevate only where required.
+permissions:
+  contents: read
+
 on:
   workflow_dispatch:
     inputs:
@@ -33,6 +37,9 @@ jobs:
           - target: win-x86
             artifact_name: PartnerAdminLinkTool-win-x86
             asset_name: PartnerAdminLinkTool-win-x86.zip
+    permissions:
+      contents: read   # checkout code
+      actions: write   # upload artifacts
     
     steps:
     - name: Checkout code
@@ -92,6 +99,9 @@ jobs:
     name: Create Manual Release
     needs: manual-release
     runs-on: ubuntu-latest
+    permissions:
+      contents: write  # create release
+      actions: read    # download artifacts
     
     steps:
     - name: Checkout code
