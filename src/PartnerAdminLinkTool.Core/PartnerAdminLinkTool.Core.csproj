@@ -14,12 +14,12 @@
     <!-- Removed Microsoft.Graph to avoid consent issues in organizations that block Microsoft Graph -->
     <!-- PAL functionality works perfectly with just Azure Management API -->
     <PackageReference Include="Microsoft.Identity.Client" Version="4.77.1" />
-    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="9.0.9" />
-    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="9.0.9" />
-    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="9.0.8" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="9.0.10" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="9.0.10" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="9.0.10" />
     <PackageReference Include="Azure.ResourceManager" Version="1.13.2" />
-    <PackageReference Include="Azure.Identity" Version="1.16.0" />
-  <PackageReference Include="Microsoft.NET.ILLink.Tasks" Version="8.0.20" />
+    <PackageReference Include="Azure.Identity" Version="1.17.0" />
+  <PackageReference Include="Microsoft.NET.ILLink.Tasks" Version="8.0.21" />
   </ItemGroup>
 
 </Project>
