@@ -11,23 +11,11 @@ namespace PartnerAdminLinkTool.Core.Services
     /// Implementation of authentication service using Microsoft Authentication Library (MSAL).
     /// 
     /// For beginners: This class handles signing users in and out, and managing access tokens
-    /// that we need to call Microsoft Graph and Azure Management APIs. MSAL handles all the
+    /// that we need to call Azure Management APIs. MSAL handles all the
     /// complex OAuth flows for us.
     /// </summary>
     public class AuthenticationService : IAuthenticationService
     {
-        /// <summary>
-        /// Get a Microsoft Graph access token for a specific tenant
-        /// NOTE: This method now returns null since Microsoft Graph dependency has been removed
-        /// to avoid consent issues in organizations that block Microsoft Graph.
-        /// </summary>
-        public async Task<string?> GetGraphAccessTokenForTenantAsync(string tenantId)
-        {
-            // Microsoft Graph dependency removed to avoid consent issues
-            // PAL functionality works perfectly without Microsoft Graph
-            await Task.CompletedTask;
-            return null;
-        }
 
         /// <summary>
         /// Get an access token for Azure Management API for a specific tenant
@@ -378,18 +366,6 @@ namespace PartnerAdminLinkTool.Core.Services
             {
                 _logger.LogError(ex, "Sign out failed");
             }
-        }
-
-        /// <summary>
-        /// Get an access token for Microsoft Graph API
-        /// NOTE: This method now returns null since Microsoft Graph dependency has been removed
-        /// to avoid consent issues in organizations that block Microsoft Graph.
-        /// </summary>
-        public async Task<string?> GetGraphAccessTokenAsync()
-        {
-            // Microsoft Graph dependency removed to avoid consent issues
-            await Task.CompletedTask;
-            return null;
         }
 
         /// <summary>

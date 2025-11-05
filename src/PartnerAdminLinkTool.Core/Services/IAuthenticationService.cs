@@ -46,16 +46,6 @@ public interface IAuthenticationService
     Task<AuthenticationState> TrySignInSilentlyAsync();
 
     /// <summary>
-    /// Get an access token for Microsoft Graph API
-    /// </summary>
-    /// <returns>Access token or null if not authenticated</returns>
-    Task<string?> GetGraphAccessTokenAsync();
-    /// <summary>
-    /// Get a Microsoft Graph access token for a specific tenant
-    /// </summary>
-    Task<string?> GetGraphAccessTokenForTenantAsync(string tenantId);
-
-    /// <summary>
     /// Get an access token for Azure Management API (default tenant)
     /// </summary>
     /// <returns>Access token or null if not authenticated</returns>
