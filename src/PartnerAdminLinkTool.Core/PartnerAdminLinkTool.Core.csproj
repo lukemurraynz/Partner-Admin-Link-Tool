@@ -13,7 +13,7 @@
   <ItemGroup>
     <!-- Removed Microsoft.Graph to avoid consent issues in organizations that block Microsoft Graph -->
     <!-- PAL functionality works perfectly with just Azure Management API -->
-    <PackageReference Include="Microsoft.Identity.Client" Version="4.77.1" />
+    <PackageReference Include="Microsoft.Identity.Client" Version="4.78.0" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="9.0.10" />
     <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="9.0.10" />
     <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="9.0.10" />
