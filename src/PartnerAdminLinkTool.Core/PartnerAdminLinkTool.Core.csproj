@@ -19,7 +19,7 @@
     <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="10.0.5" />
     <PackageReference Include="Azure.ResourceManager" Version="1.14.0" />
     <PackageReference Include="Azure.Identity" Version="1.19.0" />
-  <PackageReference Include="Microsoft.NET.ILLink.Tasks" Version="8.0.25" />
+  <PackageReference Include="Microsoft.NET.ILLink.Tasks" Version="10.0.5" />
   </ItemGroup>
 
 </Project>
